@@ -22,6 +22,11 @@ module.exports = {
         enforce: 'pre'
       },
       {
+        test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/,
+        loader: "url-loader",
+        query: { mimetype: "image/png" }
+      },
+      {
         test: /\.(css|scss)$/,
         loaders: [
           'style-loader',

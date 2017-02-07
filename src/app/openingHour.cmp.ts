@@ -1,7 +1,7 @@
 import {openHourCtrl} from "./openingHour.ctrl";
 
-export const hello: angular.IComponentOptions = {
-  template: require('./hello.html'),
+export const schedule: angular.IComponentOptions = {
+  template: require('./openingHour.html'),
   controller: openHourCtrl,
   controllerAs: "hourVm"
 };

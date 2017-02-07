@@ -1,0 +1,52 @@
+$main-color-dark: #0065aa;
+$main-color-light:#005691;
+
+.hour-list-item{
+	margin: 30px 30px;
+    color: white;
+    text-align: center;
+    border: none;
+    background: linear-gradient(to left, $main-color-light 0%, $main-color-light 58%,#000000 50%,$main-color-dark 50%,$main-color-dark 100%);
+	
+    .overlay {
+        position: absolute;
+        left: 0%;
+      	top:0;
+        width: 0%;
+        height: 100%;
+        opacity: 0.5;
+        background-color: white;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease-in;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease;
+        visibility:hidden;
+        overflow:hidden;
+        text-decoration: none;
+        .make-reservation {
+            color: $main-color-dark;
+            position: absolute;
+            bottom: 0px;
+            right: 5px;
+			font-size: 17px;
+        }
+        
+    }
+
+	&:hover .overlay {
+	    top:0;
+	    left:0;
+	    visibility:visible;
+	    width:42%;
+	    height:100%;
+    }
+}
+
+.center-block {
+    float: none !important;
+}
+
+.open-now{
+    position: absolute;
+}
+

@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+	.hour-list-item{
+		background: linear-gradient(to top, $main-color-light 0%, $main-color-light 52%,#000000 50%,$main-color-dark 50%,$main-color-dark 100%);
+	}
+
+	.overlay {
+        &:hover {
+		    top:0;
+		    left:0;
+		    visibility:visible;
+		    width:100% ! important;
+		    height:100% ! important;
+    	}
+    }
+	
+}

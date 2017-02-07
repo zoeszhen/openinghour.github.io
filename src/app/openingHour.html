@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="row">
+		<h1>
+			Opening Hours
+		</h1>		
+	</div>
+	<div class="row">
+		<div class="col-md-8 center-block">
+			<ul class="list-group" ng-repeat="item in hourVm.openingHourData">
+		  		<li class="list-group-item hour-list-item">
+		  			<div class="row">
+		  				<div class="col-md-5">
+		  					<h2>{{item.day | uppercase}}</h2> 
+		  				</div>
+		  				<div class="col-md-7">
+			  				<h3 ng-repeat="time in item.openTime">
+			  					{{time}}
+				  				<span class="open-now" ng-show="hourVm.isOpen(time, item.day)">
+				  					Open Now!
+				  				</span>
+			  				</h3> 
+			  				
+		  				</div>
+		  				<a class="overlay" href=# target="_blank" ><span class="make-reservation">{{hourVm.ableToReserve(item.openTime)}}</span></a>
+		  			</div>
+		  		</li>
+		  	</ul>
+		</div>
+		
+	</div>
+  	
+</div>
