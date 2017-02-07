@@ -4,8 +4,14 @@ Plugins: moment.js
 Others: Config with Yeoman, webpack, gulp
 
 How does it works?
-Go to the root of the directory and run "gulp serve" in the terminal.
-Open the broswer with "localhost:3000"
+develop version:
+  Go to the root of the directory:
+    run "npm install" to install all dependences 
+    run "gulp serve" in the terminal.
+    Open the broswer with "localhost:3000"
+product version:
+  "npm install" may take bit long time. The web page already deployed in https://zoeszhen.github.io/openinghour.github.io/.
+  Easily go to the link and check the functionalities.
 
 Details:
 1. All opening hour informations are read from openingHour.json file.
