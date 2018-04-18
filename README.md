@@ -17,3 +17,4 @@ Details:
 1. All opening hour informations are read from openingHour.json file.
 2. Dependences on the current time, "Open now" will showed on the side of opening time
 3. When hover on different opening time, the reservation button will be showed.
+test
